@@ -257,7 +257,7 @@ def main():
         REGISTRY.register(ResourceManagerNodeCollector(args.url, args.cluster))
         
         start_http_server(port)
-        print "Polling %s. Serving at port: %s" % (args.url, port)
+        print("Polling {}. Serving at port: {}".format(args.url, port))
         while True:
             time.sleep(1)
     except KeyboardInterrupt:
